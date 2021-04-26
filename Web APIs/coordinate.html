@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box boxx"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <style>
+        .box {
+            width: 160px;
+            height: 160px;
+            background-color: green;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .boxx {
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        const aqua = document.querySelector('.boxx');
+        aqua.addEventListener('click', (e) => {
+            console.log(aqua.getBoundingClientRect());
+            console.log(`page: ${e.pageX}, ${e.pageY}`);
+            console.log(`client:${e.clientX}, ${e.clientY}`);
+        });
+    </script>
+</body>
+</html>
