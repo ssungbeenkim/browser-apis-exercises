@@ -45,7 +45,8 @@
     h2.textContent = 'This is a title'; // <h2 class = "title">This is a title</h2>
     section.appendChild(h2);
     const h3 = document.querySelector('h3');
-    section.innerHTML = `
+    // dom tree 다시 만들고 해야하니 한번 업데이트 후에 변경할 일이 없을 때만 innerHTML
+    section.innerHTML = ` 
     <img src="img/avatar.png" alt="avatar" />
     <h1 id="brand">Dream Coding</h1>
     <h3>Don't forget to code your dream</h3>
