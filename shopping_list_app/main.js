@@ -1,7 +1,3 @@
-//구현할 기술
-// 1. input 입력 후 + 버튼 클릭시 or 사용자가 엔터하면
-// 2. input의 값을 받아와서 items에 추가. 
-// 3. input을 초기화 하고 focus 한다. 
 
 const inputBtn = document.querySelector('.footer__button');
 const input = document.querySelector('.footer__input');
