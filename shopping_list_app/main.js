@@ -26,9 +26,9 @@ const text = input.value;
 if(input.value === ''){
     return;
 }
-// 2. 
 const item = creatItem(text);
 items.appendChild(item);    
+item.scrollIntoView({block: 'center'});
 input.value = '';
 input.focus();
 }
