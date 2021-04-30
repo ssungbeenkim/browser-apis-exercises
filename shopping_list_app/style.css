@@ -12,11 +12,21 @@ body {
     text-align: center;
 }
 
-.list {
+button {
+    background: transparent;
+    border: none;
+    outline: none;  
+    cursor: pointer;
+}
+
+.section {
     width: 400px;
     margin: auto;
     background-color: cornsilk;
     border-radius: 20px;
+    -webkit-box-shadow: 7px 7px 5px -2px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px -2px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px -2px rgba(50, 50, 50, 0.75);
 }
 
 .header {
@@ -29,41 +39,69 @@ body {
     color: white;
 }
 
-.footer {
-    background: rgb(17,154,208);
-    background: linear-gradient(156deg, rgba(17,154,208,1) 0%, rgba(201,105,111,1) 48%, rgba(133,141,238,1) 100%);
-    border-radius: 0 0 20px 20px;
-    height: 48px;
-    text-align: center;
-}
-
 .items {
     height: 500px;
     overflow-y: auto;
 }
 
+.item__delete {
+    transition: all 300ms ease-in;  
+    font-size: 16px;
+}
+
+.item__delete:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
 .item__row {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 24px;
-    font-size: 24px;
+    
+    font-size: 20px;
 }   
 
-.input {
-    display: block;
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+
+}
+
+.item__devider {
+    width: 90%;
+    height: 1px;
+    background-color: lightgray;
+    margin: auto;
+}
+
+
+.footer {
+    background: rgb(17,154,208);
+    background: linear-gradient(156deg, rgba(17,154,208,1) 0%, rgba(201,105,111,1) 48%, rgba(133,141,238,1) 100%);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+
+
+.footer__input {
+
     width: 100%;
-    height: 30px;
+    height: 32px;
     border: none;
+    outline: none;
+    font-size: 24px;
+    padding: 0 16px;
 }
 
 .footer__button {
     border-radius: 50%;
-    width: 43px;
-    height: 43px;
+    width: 48px;
+    height: 48px;
     background-color: black;
+    font-size: 24px;
+    color: white;
+    transition: all 300ms ease;
 }
 
-.fa-plus {
-    color: white;
-    font-size: 30px;
+.footer__button:hover {
+    transform: scale(1.1);
 }
